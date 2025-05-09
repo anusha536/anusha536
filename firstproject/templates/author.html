@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Author</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>Author Entry Form</h2>
+
+    <form method="POST">
+        {% csrf_token %}
+        <fieldset>
+            <legend>AUTHOR DETAILS</legend><br>
+
+            <label for="name">Author Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </fieldset>
+    </form>
+
+</body>
+</html>
